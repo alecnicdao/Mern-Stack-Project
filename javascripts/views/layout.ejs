@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <base href="/">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <title>Top NBA Players</title>
+</head>
+
+<body>
+    <div class="container">
+        <% if (locals.header === undefined || header) {%>
+            <%- include("partials/_header") %>
+        <% } %>
+
+        <%- include("partials/_nav") %>
+        <% if (content) { %>
+        <%- include(content) %>
+        <% } else { %>
+            <P>Nothing to display</P>
+        <% } %>
+    </div>
+    <%- include("partials/_footer") %>
+    <script src="javascripts/main.js"></script>
+</body>
+ 
+</html>

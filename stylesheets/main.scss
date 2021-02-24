@@ -1,0 +1,221 @@
+// Your styles go here
+@charset "utf-8";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+h2 {
+    color: #C9082A;
+}
+
+.container {
+    max-width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    .pull-content-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav {
+        display: flex;
+        background: #17408B;
+        color: white;
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0px;
+
+            & > li {
+                margin: 0px;
+                padding: 0px 10px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            &:first-child {
+                flex: 1;
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        & > .card {
+            width: 30%;
+            border: 5px double #17408B;
+            color: #17408B;
+            padding: 10px;
+            margin: 10px;
+
+            img {
+                width: 100%
+            }
+
+            .extra {
+                list-style: none;
+                display: flex;
+                flex-flow: row wrap;
+                padding: 10px 0px;
+                justify-content: center;
+                align-items: center;
+
+                & > li:not(:first-child){
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+button.primary {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #17408B;
+    border-radius: 5px;
+    background: #C9082A;
+    color: white;
+}
+
+// learn more button
+
+.buttonLM {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #17408B;
+    border-radius: 5px;
+    background: #C9082A;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background: #17408B;
+    color: white;
+    padding: 20px 0 50px 20px;
+}
+
+form {
+    width: 90%;
+    .field {
+        display: flex;
+
+        & label {
+            width: 15%;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        & .control {
+            width: 85%;
+
+            input, textarea {
+                padding: 10px;
+                border: 1px solid #17408B;
+                border-radius: 3px;
+                width: 60%;
+            }
+
+            p {
+                margin: 5px 0;
+                font-size: 10px;
+                color: red;
+            }
+        }
+    }
+}
+
+.hero-body {
+    background-image: url(https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80);
+    background-size: 50%;
+
+    .title {
+        color: white;
+        text-align: center;
+    }
+
+    .subtitle {
+        color: white;
+        text-align: center;
+    }
+
+    .lead {
+        text-align: center;
+    }
+
+    .buttonTwo {
+        margin: 10px;
+        padding: 10px 20px;
+        border: 1px solid #17408B;
+        border-radius: 5px;
+        background: #C9082A;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.jumbotron2 {
+    background-image: url(https://images.unsplash.com/photo-1552984418-b55abf780dd4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fG5iYXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: 100% 100%;
+
+    .display-4 {
+        color: white;
+        text-align: center;
+    }
+
+    .lead {
+        color: white;
+    }
+
+    .my-4 {
+        color: white;
+    }
+
+    .button {
+        margin: 5px;
+        padding: 5px 10px;
+        border: 1px solid #17408B;
+        border-radius: 5px;
+        background: #C9082A;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.jumbotron3 {
+    .seemore {
+        color: #17408B;
+    }
+
+    .display-4 {
+        text-align: center;
+    }
+
+    .seeMore {
+        margin: 5px;
+        padding: 5px 10px;
+        border: 1px solid #17408B;
+        border-radius: 5px;
+        background: #C9082A;
+        color: white;
+        text-decoration: none;
+    }
+}
