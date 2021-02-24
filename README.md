@@ -1,3 +1,11 @@
+# In this project I was able to:
+Differentiate between front-end and back-end web development
+List the pros and cons of Single Page Applications (SPA’s)
+Distinguish between public-facing and private pages
+Create and manage a NoSQL database using MongoDB
+Build a secure full-stack web application using only JavaScript 
+Design and consume a REST API; and •Deploy a JavaScript-based full-stack application
+
 # Starter Project
 A starter web project powered by webpack
 
